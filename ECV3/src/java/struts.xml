@@ -1,0 +1,20 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="default" extends="struts-default"> 
+    </package>
+    
+  <package name="Controler" extends="struts-default">
+        <action name="Insertar" class="Controler.CrudEmpleado">
+            <result > /example/Registrado.jsp</result>  
+        </action> 
+    </package>
+    
+      <package name="Controler" extends="struts-default">
+        <action name="Actualizar" class="Controler.CrudEmpleado" method="Actualizar">
+            <result> /example/HelloWorld.jsp</result>  
+        </action> 
+    </package> 
+</struts>
